@@ -27,6 +27,7 @@ never independently reject an application.
 ## Start here
 
 ```bash
+python scripts/check_environment.py
 python -m pytest -q
 git status
 ```
@@ -38,6 +39,20 @@ Read these files before editing:
 - `tests/test_public.py`
 
 Keep the public function names and arguments unchanged. You may add private helpers.
+
+## Suggested interview pacing
+
+| Time | Candidate activity |
+|---|---|
+| 0–8 minutes | Read the repository, run the environment check and tests, restate the contract |
+| 8–15 minutes | Ask clarifying questions and choose the smallest vertical slice |
+| 15–60 minutes | Implement in test-backed increments and narrate important decisions |
+| 60–78 minutes | Handle malformed responses, AWS errors, and routing boundaries |
+| 78–87 minutes | Add focused tests and inspect the full diff |
+| 87–90 minutes | Summarize what works, what remains, and the next safe change |
+
+This pacing is guidance, not another requirement. Follow test evidence when it suggests a
+different order.
 
 ## Expected model output
 
